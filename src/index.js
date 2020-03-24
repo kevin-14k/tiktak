@@ -41,7 +41,6 @@ class Board extends React.Component {
     );
   }
 
-
   writeBoard() {
     var i;
     var k = 0;
@@ -123,13 +122,9 @@ class Game extends React.Component {
     const winner  = calculateWinner(current.squares);
 
     const moves = history.map((step, move) => {
-      const desc = move ?
-        'Back to #' + move :
-        'Restart the game';
-
-      const klass = (this.state.stepNumber == move) ? 'current' : null;  
+      const desc = move ? 'Back to #' + move : 'Restart the game';
+      const klass = (this.state.stepNumber === move) ? 'current' : null;  
       
-
       return (
         <li key={move}>
           <button class={klass} onClick={() => this.jumpTo(move)}>{desc}</button>
@@ -167,6 +162,8 @@ class Game extends React.Component {
     );
   }
 }
+
+// ========================================
 
 function calculateWinner(squares) {
   const lines = [
