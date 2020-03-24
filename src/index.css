@@ -1,4 +1,4 @@
-html, .navbar-brand, .navbar-menu {
+html {
   background: #ecec;
 }
 
@@ -6,8 +6,9 @@ body {
   font: 14px "Century Gothic", Futura, sans-serif;
 }
 
-.container {
-  
+section {
+  top: 10%;
+  position: relative;
 }
 
 ol, ul {
@@ -36,6 +37,10 @@ li button {
 #player-2 {
   background-image: url('sitting-2.png');
   background-size: cover;
+}
+
+#root {
+  height: 100vh;
 }
 
 .board-row:after {
@@ -84,52 +89,4 @@ li button {
   width: auto !important;
   padding: 50px;
   border-radius: 20px;
-}
-
-.spin-reverse {
-  -webkit-animation: fa-spin-reverse 2s infinite linear;
-  animation: fa-spin-reverse 2s infinite linear;
-}
-
-.footer {
-  background-color: #b74f6f;
-  padding: 2rem 0.5rem 2rem;
-  margin: auto;
-  color: white;
-}
-
-.footer strong {
-  color:white;
-}
-
-.footer a {
-  color: black;
-}
-
-.is-fixed-bottom {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-}
-
-@-webkit-keyframes fa-spin-reverse {
-  100% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  0% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
-}
-
-@keyframes fa-spin-reverse {
-  100% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  0% {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
-  }
 }
