@@ -1,0 +1,135 @@
+html, .navbar-brand, .navbar-menu {
+  background: #ecec;
+}
+
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+}
+
+.container {
+  
+}
+
+ol, ul {
+  padding-left: 30px;
+  list-style-type: none;
+}
+
+li button {
+  width: 180px;
+  height: 31px;
+  background: #34e5ff1a;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+#player-1, #player-2 {
+  height: 385px;
+}
+
+#player-1 {
+  background-image: url('sitting-1.png');
+  background-size: cover;
+  transform: scaleX(-1);
+}
+
+#player-2 {
+  background-image: url('sitting-2.png');
+  background-size: cover;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #adbdff;
+  border: 2px solid #fff;
+  float: left;
+  font-size: 90px;
+  font-weight: bold;
+  line-height: 100px;
+  height: 100px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.square:focus {
+  background: #b74f6f;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-bottom: 40px;
+}
+
+.game-board {
+  width: auto !important;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.spin-reverse {
+  -webkit-animation: fa-spin-reverse 2s infinite linear;
+  animation: fa-spin-reverse 2s infinite linear;
+}
+
+.footer {
+  background-color: #b74f6f;
+  padding: 2rem 0.5rem 2rem;
+  margin: auto;
+  color: white;
+}
+
+.footer strong {
+  color:white;
+}
+
+.footer a {
+  color: black;
+}
+
+.is-fixed-bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+@-webkit-keyframes fa-spin-reverse {
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  0% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes fa-spin-reverse {
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  0% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
